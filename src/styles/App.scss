@@ -1,5 +1,9 @@
 @import 'config';
+@import 'Home';
+@import 'Leaderboard';
 @import 'About';
+@import 'Settings';
+@import 'User';
 
 .App {
   height: 100vh;
@@ -23,6 +27,27 @@
   height: 5vh;
   width: 100%;
   background-color: $primaryBackgroundColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-item {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $primaryColor;
+    cursor: pointer;
+
+    &.active {
+      color: $secondaryColor;
+    }
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
 }
 
 //=============================================================================
